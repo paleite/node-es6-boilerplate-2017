@@ -1,0 +1,11 @@
+drop-empty-elements: false
+indent-spaces: 2
+indent: auto
+quiet: true
+show-errors: 1
+show-info: 0
+show-warnings: 0
+tidy-mark: false
+wrap-attributes: false
+wrap: 0
+write-back: true
