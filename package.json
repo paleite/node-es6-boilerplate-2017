@@ -14,9 +14,8 @@
   "lint-staged": {
     "*.{json,scss}": ["prettier --ignore-path ./.eslintignore --write", "git add"],
     "*.js": ["prettier --ignore-path ./.eslintignore --write", "eslint --fix", "git add"],
-    "src/*.svg": ["sh svgo.sh", "git add"],
-    "src/*.{png,gif}": ["sh imageoptim.sh", "git add"],
-    "src/*.jpg": ["sh imageoptim.sh", "git add"],
+    "src/*.svg": ["svgo --precision=2 --enable=removeTitle --enable=sortAttrs --enable=removeDimensions", "git add"],
+    "src/*.{jpg,png,gif}": ["sh imageoptim.sh", "git add"],
     "src/*.scss": ["sass-lint"]
   },
   "author": "",

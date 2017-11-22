@@ -1,1 +1,1 @@
-echo "$1" | imageoptim --jpeg-mini --quit
+echo "$@" | tr " " "\n" | imageoptim --jpeg-mini --image-alpha --quit
